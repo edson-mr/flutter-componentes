@@ -1,4 +1,4 @@
-import 'package:aprendiendo/listview1_screen.dart';
+import 'package:aprendiendo/screens/listview2_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -6,6 +6,6 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Listview1Screen();
+    return const Listview2Screen();
   }
 }

@@ -1,3 +1,4 @@
+import 'package:aprendiendo/theme/tema.dart';
 import 'package:flutter/material.dart';
 
 class Listview1Screen extends StatelessWidget {
@@ -10,15 +11,20 @@ class Listview1Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('ListView Tipo 1'),
-        centerTitle: true,
       ),
       body: ListView(
         children: [
           ...names
               .map((e) => ListTile(
-                    leading: const Icon(Icons.account_circle),
+                    leading: const Icon(
+                      Icons.account_circle,
+                      color: Tema.primario,
+                    ),
                     title: Text(e),
-                    trailing: const Icon(Icons.add_ic_call),
+                    trailing: const Icon(
+                      Icons.add_ic_call,
+                      color: Tema.primario,
+                    ),
                   ))
               .toList()
         ],

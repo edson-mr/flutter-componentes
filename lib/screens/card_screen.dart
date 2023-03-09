@@ -1,3 +1,4 @@
+import 'package:aprendiendo/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
 class CardScreen extends StatelessWidget {
@@ -9,8 +10,11 @@ class CardScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('CardScreen'),
       ),
-      body: const Center(
-        child: Text('CardScreen'),
+      body: ListView(
+        padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
+        children: const [
+          CustomCardType1(),
+        ],
       ),
     );
   }

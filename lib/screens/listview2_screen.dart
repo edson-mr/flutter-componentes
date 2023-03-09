@@ -1,3 +1,4 @@
+import 'package:aprendiendo/theme/tema.dart';
 import 'package:flutter/material.dart';
 
 class Listview2Screen extends StatelessWidget {
@@ -9,13 +10,18 @@ class Listview2Screen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Listview2Screen'),
-        centerTitle: true,
       ),
       body: ListView.separated(
           itemBuilder: (context, index) => ListTile(
-                leading: const Icon(Icons.account_box),
+                leading: const Icon(
+                  Icons.account_box,
+                  color: Tema.primario,
+                ),
                 title: Text(names[index]),
-                trailing: const Icon(Icons.arrow_circle_right_rounded),
+                trailing: const Icon(
+                  Icons.arrow_circle_right_rounded,
+                  color: Tema.primario,
+                ),
               ),
           separatorBuilder: (context, index) => const Divider(
                 thickness: 2,

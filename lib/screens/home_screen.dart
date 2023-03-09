@@ -1,5 +1,6 @@
 import 'package:aprendiendo/models/models.dart';
 import 'package:aprendiendo/routes/app_routes.dart';
+import 'package:aprendiendo/theme/tema.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,14 +13,16 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Menú Principal'),
-        centerTitle: true,
       ),
       body: ListView.separated(
           itemBuilder: (context, i) {
             MenuOption option = menuOptions[i];
 
             return ListTile(
-              leading: Icon(option.icon),
+              leading: Icon(
+                option.icon,
+                color: Tema.primario,
+              ),
               title: Text(option.nombre),
               onTap: () => Navigator.pushNamed(context, option.route),
             );

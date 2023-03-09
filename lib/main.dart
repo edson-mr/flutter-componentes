@@ -1,4 +1,5 @@
-import 'package:aprendiendo/screens/home_screen.dart';
+import 'package:aprendiendo/routes/app_routes.dart';
+import 'package:aprendiendo/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,10 +11,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Aplicación de Algunos Componentes',
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      // home: const HomeScreen(),
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.getRoutes(),
+      onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
 }

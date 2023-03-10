@@ -14,5 +14,11 @@ class Tema {
         foregroundColor: primario,
       ),
     ),
+    floatingActionButtonTheme:
+        const FloatingActionButtonThemeData(backgroundColor: primario),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+          backgroundColor: primario, shape: const StadiumBorder()),
+    ),
   );
 }

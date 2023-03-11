@@ -39,6 +39,11 @@ class AppRoutes {
         icon: Icons.account_circle,
         nombre: 'Avatar Screen',
         screen: const AvatarScreen()),
+    MenuOption(
+        route: 'Container',
+        icon: Icons.square,
+        nombre: 'Container Screen',
+        screen: const ContainerScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getRoutes() {

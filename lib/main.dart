@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Aplicación de Algunos Componentes',
+      title: 'Aplicación de Algunos Componentes Básicos',
       debugShowCheckedModeBanner: false,
       // home: const HomeScreen(),
       initialRoute: AppRoutes.initialRoute,

@@ -44,6 +44,11 @@ class AppRoutes {
         icon: Icons.square,
         nombre: 'Container Screen',
         screen: const ContainerScreen()),
+    MenuOption(
+        route: 'Input',
+        icon: Icons.input,
+        nombre: 'Inputs Screen',
+        screen: const InputsScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getRoutes() {
